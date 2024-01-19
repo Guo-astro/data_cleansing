@@ -44,9 +44,6 @@ async fn main() -> Result<(), BQError> {
     // Read configuration parameters from environment variables
     dotenv().ok();
 
-    for (key, value) in env::vars() {
-        println!("{}: {}", key, value);
-    }
     let (ref project_id, ref dataset_id, ref table_id, ref gcp_sa_key) = env_vars();
 
     // Init BigQuery client
