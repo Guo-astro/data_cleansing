@@ -60,7 +60,7 @@ async fn main() -> Result<(), BQError> {
         .dataset()
         .create(
             Dataset::new(project_id, dataset_id)
-                .location("US")
+                .location("asia-northeast1")
                 .friendly_name("Just a demo dataset")
                 .label("owner", "me")
                 .label("env", "prod"),
